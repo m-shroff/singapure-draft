@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
 </head>
-<body style="background-color:powderblue;">
-
+<body>
+<video src="Videos/waterfall_mario.mp4" muted loop autoplay> </video>
 <h1 style="text-align:center;"> Singapure </h1>
 <img src="Images/waterdrop.jpg" width="200" height="100">
 <p> <a href = "https://www.tigris.com.sg/"> Tigris Water Company </a>  </p>
+<p id="test"> Button below. </p>
+<button type="button" onclick=myFunction()> Button! </button>
+
+<script>
+function myFunction() {
+document.getElementById("test").innerHTML = "Hello";
+}
+</script>
 
 </body>
 </html>
