@@ -2,36 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Singapure</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
 </head>
 <body>
-<video src="Videos/waterfall_mario.mp4" muted loop autoplay> </video>
-<h1 style="text-align:center;"> Singapure </h1>
+<div class="main_video">
+    <video src="Videos/waterfall_mario.mp4" muted loop autoplay> </video>
+</div>
+<h1> Singapure </h1>
 
-<img src="Images/waterdrop.jpg" width="200" height="100">
 <p> <a href = "https://www.tigris.com.sg/"> Tigris Water Company </a>  </p>
+<!-- although the next line demonstrates how to go lower on page, i may want to do that in JavaScript for smoothness option -->
 <p> Click <a href="#where_water_from"> here </a> to skip down page!</p>
 
-<a id="who_we_are">
-    <p> Singapure is bla bla bla bla bla. </p>
+<div id="who_we_are" class="who_we_are">
+    <!-- This section might be for deletion if it's unnecessary -->
+    <p> Singapure is provided to local users at a more affordable price than existing brands.
+        It improves access to reliable and affordable drinking water for the local population,
+        adhering to ESG and SDG commitments. </p>
+</div>
 
-</a>
+<div id="where_water_from" class="where_water_from">
+    <p> Singapure water is a highly purified mineral water, sourced from deep in the ground near Mount Batukaru.
+        The water is cleaned in our factory in Kerambitan, Tabanan using a four-step purification process.</p>
+</div>
 
-<p id="test"> Button below. </p>
-<button type="button" onclick=myFunction()> Button! </button>
-
-<a id="where_water_from">
-    <p> Singapure sources the water from Bali. Bla bla bla bla bla bla</p>
-</a>
+<div id="purification_process" class="purification_process">
+    <p> The following processes are used to purify our water: </p>
+    <ol>
+        <li> Reverse Osmosis </li>
+        <li> Ozonation </li>
+        <li> Ultrafiltration </li>
+        <li> Ultraviolet purification </li>
+    </ol>
+    <p> For your peace of mind, the water is also tested in our in-house laboratory two times a day
+        to insure that it is clean, something that is rare in the industry. </p>
+</div>
 
 <script>
-function myFunction() {
-document.getElementById("test").innerHTML = "Hello";
-}
+
 </script>
 
 </body>

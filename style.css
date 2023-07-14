@@ -1,11 +1,25 @@
 body {
-    margin: 0;
-    font-family: 'Outfit', verdana;
+ font-family: 'Outfit', verdana;
+}
+.main_video {
+ /* Why can't this be 0??? */
+   margin: -10px;
 
 }
 h1 {
     position: absolute;
     top: 0;
     z-index = 1;
+    font-size: 60px;
     color: #F1FAFE;
+    padding: 60px 80px;
+}
+
+.where_water_from {
+    margin: 50px;
+    font-size: 30px;
+}
+.purification_process {
+    margin: 80px;
+    font-size: 25px;
 }
