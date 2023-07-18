@@ -4,7 +4,6 @@ body {
 .main_video {
  /* Why can't this be 0??? */
    margin: -10px;
-
 }
 h1 {
     position: absolute;
@@ -14,12 +13,11 @@ h1 {
     color: #F1FAFE;
     padding: 60px 80px;
 }
-
 .where_water_from {
-    margin: 50px;
+    margin: 110px 200px;
     font-size: 30px;
 }
 .purification_process {
-    margin: 80px;
+    margin: 200px 0px 0px 700px;
     font-size: 25px;
 }
