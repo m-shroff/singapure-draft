@@ -1,23 +1,55 @@
 body {
  font-family: 'Outfit', verdana;
+
 }
+img {
+    max-width: 100%;
+}
+
 .main_video {
  /* Why can't this be 0??? */
    margin: -10px;
+
 }
-h1 {
+.over_video {
     position: absolute;
     top: 0;
     z-index = 1;
     font-size: 60px;
     color: #F1FAFE;
     padding: 60px 80px;
+
 }
-.where_water_from {
-    margin: 110px 200px;
-    font-size: 30px;
+.product_container {
+/* Product container is referring to the flex container that has the product ordering and image */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
-.purification_process {
-    margin: 200px 0px 0px 700px;
-    font-size: 25px;
+.product_container > div {
+/* This is for spacing. I'm not sure if this is necessary */
+    margin: 2rem;
 }
+
+.order_text {
+    font-size: 200px;
+    flex: 3;
+}
+/*.dropdown {
+     this is where I would put any positioning
+} */
+.dropbtn {
+    background-color: #6773B7;
+    color: white;
+    padding: 20px 60px;
+    font-size: 20px;
+
+}
+.singapure_containers {
+    max-height: 50%;
+    max-width: 50%;
+}
+
+
