@@ -2,6 +2,9 @@ body {
  font-family: 'Outfit', verdana;
 
 }
+.topnav {
+
+}
 img {
     max-width: 100%;
 }
@@ -45,7 +48,18 @@ img {
     color: white;
     padding: 20px 60px;
     font-size: 20px;
+}
+.dropdown_content_1 {
+    /* This is what's in the Quantity dropdown */
+    display: none;
+    background-color: #55C5E9;
+    min-width: 60px;
+    z-index: 1;
 
+}
+.dropdown:hover .dropdown_content_1 {
+    cursor: pointer;
+    display: block;
 }
 .singapure_containers {
     max-height: 50%;
