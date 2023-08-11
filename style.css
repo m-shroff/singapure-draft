@@ -3,15 +3,35 @@ body {
 
 }
 .topnav {
+  margin: 0;
+  padding: 0;
+  display: block;
+  z-index: 1;
+  font-size: 20px;
 
+}
+.topnav li{
+    list-style-type: none;
+    float: left;
+}
+.topnav a{
+   color: #F1FAFE;
+}
+.topnav li a{
+  display: block;
+  background-color: #6773B7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 img {
     max-width: 100%;
+    color
 }
-
 .main_video {
  /* Why can't this be 0??? */
    margin: -10px;
+   z-index = -1;
 
 }
 .over_video {
@@ -20,7 +40,7 @@ img {
     z-index = 1;
     font-size: 60px;
     color: #F1FAFE;
-    padding: 60px 80px;
+    padding: 12em 1.5em;
 
 }
 .product_container {
@@ -55,6 +75,7 @@ img {
     background-color: #55C5E9;
     min-width: 60px;
     z-index: 1;
+    list-style-type: none;
 
 }
 .dropdown:hover .dropdown_content_1 {
@@ -66,4 +87,16 @@ img {
     max-width: 50%;
 }
 
+.pure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 
+}
+.paired {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
