@@ -8,11 +8,15 @@ body {
   display: block;
   z-index: 1;
   font-size: 20px;
+  background-color: #6773B7;
+  overflow: hidden;
+
 
 }
 .topnav li{
     list-style-type: none;
     float: left;
+
 }
 .topnav a{
    color: #F1FAFE;
@@ -26,12 +30,16 @@ body {
 }
 img {
     max-width: 100%;
-    color
+}
+video {
+width: 100%;
+     height: auto;
 }
 .main_video {
  /* Why can't this be 0??? */
    margin: -10px;
    z-index = -1;
+
 
 }
 .over_video {
@@ -40,7 +48,15 @@ img {
     z-index = 1;
     font-size: 60px;
     color: #F1FAFE;
-    padding: 12em 1.5em;
+
+}
+
+.logo {
+z-index = 1;
+position: absolute;
+top: 0;
+padding: 2em 30em;
+max-width: 25%;
 
 }
 .product_container {
