@@ -3,29 +3,27 @@ body {
 
 }
 .topnav {
-  margin: -35px;
-  padding: 5px;
-  display:block;
   z-index: 2;
   font-size: 20px;
   overflow: hidden;
-
-
-
+}
+.topnav ul {
+list-style-type: none;
+  background-color: #F1FAFE;
+margin: 0;
+padding: 0;
 }
 .topnav li{
-    list-style-type: none;
     float: left;
-
 }
 .topnav a{
    color: #6773B7;
 }
 .topnav li a{
   display: block;
-  background-color: #F1FAFE;
   text-align: center;
-  padding: 14px 16px;
+  padding: 7px 15px;
+  margin: 0;
   text-decoration: none;
 
 }
@@ -33,37 +31,34 @@ img {
     max-width: 100%;
 }
 video {
- object-fit: cover;
+ object-fit: contain;
   height: 100%;
   width: 100%;
     position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
+      margin: 0 0 0 0;
       z-index: -1;
 
 }
 .main_video {
+    /* Formatting is strange (width 102vw & transform: translateX) because there was a slight gap between video and edge of screen */
     position: relative;
-    width: 100vw;
+    width: 102vw;
     height: 100vh;
     overflow: hidden;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateX(-10px);
 
 }
 .over_video {
-
     font-size: 80px;
     color: #F1FAFE;
     position: relative;
     z-index = 1;
     bottom: -3em;
     text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
-
-
 }
 
 .logo {
