@@ -30,7 +30,7 @@
     <p> WATER WORTHY OF YOU.</p>
 </div>
     <div class="logo">
-        <img src="Images/singapure 508.png">
+        <img src="Images/logo_singapure.png">
     </div>
 </div>
 
@@ -48,17 +48,34 @@
         <p> Our Water </p>
          <p>   Super clean, super healthy.  Water worthy of you </p>
             <div class="dropdown">
-                <button class="dropbtn">Quantity</button>
-                <div class="dropdown_content_1">
-                    <ul>
-                        <li> <a href="#">X gallons</a> </li>
-                       <li>   <a href="#">Y gallons</a> </li>
-                      <li>  <a href="#">Z gallons</a> </li> </ul>
-
+                <div class="select">
+                    <span class="selected"> Quantity </span>
+                    <div class="caret"></div>
                 </div>
+                <ul class="menu">
+                    <li>One liter</li>
+                    <li>Two liters</li>
+                    <li class="active">Three liters</li>
+                    <li>Five liters</li>
+                </ul>
+            </div>
+            <br> <br>
+            <div class="dropdown">
+                <div class="select">
+                    <span class="selected"> Frequency </span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li>Once a month</li>
+                    <li>Twice a month</li>
+                    <li class="active">Three times a month</li>
+                    <li>Weekly</li>
+                </ul>
+            </div>
+
 
         </div>
-        </div>
+
    <div class="singapure_containers"><img src="Images/singapure_2_containers.JPG" alt="singapure containers"></div>
 </div>
 
@@ -86,6 +103,41 @@
 </div>
 
 <script>
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        const select = dropdown.querySelector('.select');
+        const caret = dropdown.querySelector('.caret');
+        const menu = dropdown.querySelector('.menu');
+        const options = dropdown.querySelectorAll('.menu li');
+        const selected = dropdown.querySelector('.selected');
+
+        select.addEventListener('click', () => {
+            select.classList.toggle('select-clicked');
+            caret.classList.toggle('caret-rotate');
+            menu.classList.toggle('menu-open');
+         });
+
+         options.forEach(option => {
+            option.addEventListener('click', () => {
+            selected.innerText = option.innerText;
+            select.classList.remove('select-clicked');
+            caret.classList.remove('caret-rotate');
+            menu.classList.remove('menu-open');
+            options.forEach(option => {
+                option.classList.remove('active');
+            });
+            option.classList.add('active');
+         });
+        });
+    });
+
+
+
+
+
+
+
 
 </script>
 
