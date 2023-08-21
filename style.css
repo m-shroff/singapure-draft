@@ -1,3 +1,6 @@
+html {
+scroll-behavior: smooth;
+}
 body {
  font-family: 'Outfit', verdana;
  background-color: #F1FAFE;
@@ -40,16 +43,16 @@ video {
 
 }
 .main_video {
-    /* Formatting is strange (width 102vw & transform: translateX) because there was a slight gap between video and edge of screen */
+    /* Formatting is strange (width 105vw & transform: translateX) because there was a slight gap between video and edge of screen */
     position: relative;
-    width: 102vw;
-    height: 100vh;
+    width: 120vw;
+    height: 105vh;
     overflow: hidden;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(-20px);
+    transform: translateX(-135px);
 
 }
 .over_video {
@@ -82,9 +85,11 @@ max-width: 10%;
 /* This is for spacing. I'm not sure if this is necessary */
     margin: 2rem;
 }
-
+h1 {
+    font-size: 4em;
+     text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+}
 .order_text {
-    font-size: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,16 +178,18 @@ cursor: pointer;
     max-width: 50%;
 }
 
-.pure {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+.water {
+      margin: 2rem;
+      display: flex;
+      align-items: flex-start;
+      box-sizing: border-box;
+}
+.water img {
+    max-height: 50%;
+    max-width: 50%;
+    margin: 2rem;
 
 }
-.paired {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
+/* Water text size is in the HTML code */
+
+
