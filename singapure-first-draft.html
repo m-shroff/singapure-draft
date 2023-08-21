@@ -120,7 +120,9 @@
 
          options.forEach(option => {
             option.addEventListener('click', () => {
+            //Since I believe the below text gives you the option, getting the 'selected.innerText' should be what I need to add more functionality
             selected.innerText = option.innerText;
+
             select.classList.remove('select-clicked');
             caret.classList.remove('caret-rotate');
             menu.classList.remove('menu-open');
