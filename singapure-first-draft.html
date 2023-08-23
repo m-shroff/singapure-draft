@@ -31,18 +31,15 @@
         <a href="#topnav"> <img src="Images/color_logo_no_bckground.png"> </a>
     </div>
 </div>
-
-
 <div class="future">
     <h1><em>Taste the future of water</em></h1>
     <p>Sustainably sourced from deep in the
     Bali earth, ultra purified using Singapore-designed technology without any chemicals. </p>
-
 </div>
 
 <div id="product_container" class="product_container">
         <div id="ordertext">
-        <h1 style="font-variant: small-caps;"> order now </h1>
+            <h1><em>ORDER NOW</em></h1>
             <div class="dropdown">
                 <div class="select">
                     <span class="selected"> Quantity </span>
@@ -68,15 +65,14 @@
                     <li class="active">30 days</li>
                 </ul>
             </div>
-
-
+            <button id="buy">BUY NOW</button>
         </div>
 
    <div class="singapure_containers"><img src="Images/pink sunset bottle.png" alt="singapure containers"></div>
 </div>
 
 <div id="water" class="water">
-    <img src="Images/pexels-oleksandr-p-2166643.jpg">
+    <img src="Images/pexels-oliver-sjöström-931018.jpg">
     <div class="water_text">
     <h1> Our Water </h1>
        <p style="font-size: 1.5em"> Hydrate happier. Water worthy of you. </p>
@@ -84,21 +80,22 @@
         </p>
     </div>
 </div>
-<br> <br>
+<br>
 <div id="why_us" class="why_us">
     <h1> Why Singapure? </h1>
     <div class="pure">
     <p> <b> Truly pure. </b> Our water is cleaned using a four-step purification process <!-- (NEEDS HYPERLINK) -->with no chemicals at the factory in Tabanan making it extremely hygienic.
         An on-site laboratory tests the water twice a day to ensure the purity of every gallon that leaves our premises. We store the filled gallons inside a covered warehouse to preserve the quality of water from the sun and other elements.
-        All because we care about our water and we care about you </p>  <img src="Images/waterdrop.jpg"> </div>
+        All because we care about our water and we care about you <img src="Images/pexels-matt-hardy-1533720.jpg"> </p> </div>
     <div class="paired">
     <p> <b> Well paired. </b> Our water perfectly complements any meal, because it has a balanced and neutral flavour which will not change the taste of your food between sips.
-        This is why Singapure is the preferred choice of many restaurants and cafes</p> <img src="Images/food.png"> </div>
+        This is why Singapure is the preferred choice of many restaurants and cafes <img src="Images/pexels-athena-2961968.jpg"> </p> </div>
     <div class="brew">
     <p> <b> Beautiful brew. </b> Coffee tastes smoother and has more depth of flavour when made with our water.  This is because TDS (total dissolved solids) in the water is the ideal range for perfect extraction, as recommended by an international body of specialty coffee manufacturers
+        <img src="Images/pexels-bibhash-banerjee-1047254.jpg">
     </p> </div>
     <div class="health">
-    <p> <b> Healthful and healing. </b> Our water has a balanced pH level of 7.2 and can be easily digested by everyone.  </p> </div>
+    <p> <b> Healthful and healing. </b> Our water has a balanced pH level of 7.2 and can be easily digested by everyone. <img src="Images/pexels-cmonphotography-1809644.jpg"> </p> </div>
 
 </div>
 <div class="links">
@@ -159,7 +156,13 @@ Water worthy of you.
             option.classList.add('active');
          });
         });
+        document.getElementById('buy').addEventListener('click', () => {
+        alert(selected.innerText);
     });
+
+    });
+
+
 
 
 
