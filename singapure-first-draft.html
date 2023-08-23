@@ -10,42 +10,39 @@
 </head>
 <body>
 
-<div class="topnav">
+<div id="topnav" class="topnav">
     <ul>
-        <li> <a href="#home">Home</a> </li>
-        <li> <a href="#ordertext">Shop</a> </li>
-        <li>  <a href="#water">Our Water</a> </li>
-        <li>  <a href="#why">Why Singapure?</a> </li>
-        <li> <a href="#sustainability">Sustainability</a> </li>
-        <li style="float:right"><a href="#faqs">FAQs (DELETE?)</a> </li>
-        <li style="float:right">  <a href="#contact">Contact Us</a>  </li>
+        <li> <a href="#home"><em>HOME</em></a> </li>
+        <li> <a href="#product_container"><em>SHOP</em></a> </li>
+        <li>  <a href="#water"><em>OUR WATER</em></a> </li>
+        <li>  <a href="#why_us"><em>WHY SINGAPURE?</em></a> </li>
+        <li> <a href="#sustainability"><em>SUSTAINABILITY</em></a> </li>
+        <li>  <a style="float:right;" href="#contact"><em>CONTACT US</em></a>  </li>
     </ul>
 
 </div>
 
-<div class="main_video">
+<div id="home" class="main_video">
     <video src="Videos/pexels-rostislav-uzunov-7385122.mp4" playsinline muted loop autoplay> </video>
-
     <div class="over_video">
-    <p> WATER WORTHY OF YOU.</p>
+    <p> water worthy of you. </p>
 </div>
     <div class="logo">
-        <img src="Images/logo_singapure.png">
+        <a href="#topnav"> <img src="Images/color_logo_no_bckground.png"> </a>
     </div>
 </div>
 
 
+<div class="future">
+    <h1><em>Taste the future of water</em></h1>
+    <p>Sustainably sourced from deep in the
+    Bali earth, ultra purified using Singapore-designed technology without any chemicals. </p>
 
-
-<p> <a href = "https://www.tigris.com.sg/"> Tigris Water Company </a>  </p>
-
-<p> Taste the future of water, sustainably sourced from deep in the
-    Bali earth, ultra purified using Singapore-designed technology without any chemicals.
-</p>
+</div>
 
 <div id="product_container" class="product_container">
         <div id="ordertext">
-        <h1> Singapure Subscription </h1>
+        <h1 style="font-variant: small-caps;"> order now </h1>
             <div class="dropdown">
                 <div class="select">
                     <span class="selected"> Quantity </span>
@@ -65,10 +62,10 @@
                     <div class="caret"></div>
                 </div>
                 <ul class="menu">
+                    <li> Once </li>
                     <li>7 days</li>
-                    <li>14 daus</li>
+                    <li>14 days</li>
                     <li class="active">30 days</li>
-                    <li>Weekly</li>
                 </ul>
             </div>
 
@@ -78,17 +75,17 @@
    <div class="singapure_containers"><img src="Images/pink sunset bottle.png" alt="singapure containers"></div>
 </div>
 
-<div class="water">
+<div id="water" class="water">
     <img src="Images/pexels-oleksandr-p-2166643.jpg">
     <div class="water_text">
     <h1> Our Water </h1>
-       <p style="font-size: 1.5em"> Super clean, super healthy.  Water worthy of you. </p>
+       <p style="font-size: 1.5em"> Hydrate happier. Water worthy of you. </p>
         <p> Soft, smooth and light on the palate, our water is easy to drink, and very refreshing. The perfectly balanced pH of the water gives a consistent taste experience. It responds beautifully to carbonation – in fact, the process makes the water taste even better – which is perfect for those who prefer bubbles in their water
         </p>
     </div>
 </div>
 <br> <br>
-<div class="why_us">
+<div id="why_us" class="why_us">
     <h1> Why Singapure? </h1>
     <div class="pure">
     <p> <b> Truly pure. </b> Our water is cleaned using a four-step purification process <!-- (NEEDS HYPERLINK) -->with no chemicals at the factory in Tabanan making it extremely hygienic.
@@ -104,6 +101,33 @@
     <p> <b> Healthful and healing. </b> Our water has a balanced pH level of 7.2 and can be easily digested by everyone.  </p> </div>
 
 </div>
+<div class="links">
+<ul>
+    <li>Home</li>
+    <li>Shop</li>
+    <li>Our Water</li>
+</ul>
+    <ul>
+        <li>Why Singapure?</li>
+        <li>Sustainability</li>
+        <li>Contact Us</li>
+    </ul>
+
+
+<ul>
+    Find us on:
+    <li>Instagram</li>
+    <li>Facebook</li>
+    <li>WhatsApp</li>
+</ul>
+
+<ul>
+    <li>Terms & Conditions</li>
+    <li>Privacy Policy</li>
+</ul>
+</div>
+
+Water worthy of you.
 
 <script>
     const dropdowns = document.querySelectorAll('.dropdown');

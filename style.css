@@ -3,75 +3,115 @@ scroll-behavior: smooth;
 }
 body {
  font-family: 'Outfit', verdana;
- background-color: #F1FAFE;
+ background-color: beige;
+ margin: 0px;
 }
 .topnav {
   z-index: 2;
-  font-size: 18px;
+  font-size: 15px;
   overflow: hidden;
-
+  background-color: #172154;
 }
 .topnav ul {
 list-style-type: none;
 margin: 0;
-padding: 0;
 }
 .topnav li{
-    float: left;
+   display: inline;
 }
 .topnav a{
-   color: #6773B7;
+   color: #F1FAFE;
 }
 .topnav li a{
-  display: block;
-  text-align: center;
-  padding: 7px 15px;
+  float: left;
+  text-align: left;
+  padding: 20px 15px;
   margin: 0;
   text-decoration: none;
+  font-weight: bold;
 
+}
+.topnav li a:hover {
+    background: #6773B7;
 }
 img {
     max-width: 100%;
+    min-width: 20%;
 }
 video {
- object-fit: contain;
+ object-fit: cover;
   height: 100%;
   width: 100%;
     position: absolute;
-      margin: 0 0 0 0;
+      margin: 0;
       z-index: -1;
+
 
 }
 .main_video {
-    /* Formatting is strange (width 105vw & transform: translateX) because there was a slight gap between video and edge of screen */
     position: relative;
-    width: 120vw;
-    height: 105vh;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(-135px);
 
 }
 .over_video {
-    font-size: 80px;
-    font-weight: bold;
+    font-size: 6.5vw;
+    font-weight: regular;
     color: #F1FAFE;
     position: relative;
     z-index = 1;
-    bottom: -3em;
-    text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+    top: 3em;
+    bottom: 1em;
+    font-family:'Baskerville';
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+      -moz-animation: fadeIn 5s;
+      -o-animation: fadeIn 5s;
+      -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .logo {
 z-index = 1;
 position: absolute;
-top: 0;
-padding: 2em 30em;
-max-width: 10%;
+top: 2em;
+width: 20%;
 
+}
+.future {
+    margin: 0 5rem 5rem 5rem;
+    align-text: center;
+    font-size: 1em;
 }
 .product_container {
 /* Product container is referring to the flex container that has the product ordering and image */
@@ -81,14 +121,11 @@ max-width: 10%;
     justify-content: space-evenly;
 
 }
-.product_container > div {
-/* This is for spacing. I'm not sure if this is necessary */
-    margin: 2rem;
-}
 h1 {
     font-size: 4em;
-     text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+    color: #172154;
 }
+
 .order_text {
     display: flex;
     flex-direction: column;
@@ -174,8 +211,8 @@ cursor: pointer;
 }
 
 .singapure_containers {
-    max-height: 50%;
-    max-width: 50%;
+    max-height: 45%;
+    max-width: 45%;
 }
 
 .water {
@@ -183,6 +220,7 @@ cursor: pointer;
       display: flex;
       align-items: flex-start;
       box-sizing: border-box;
+      color: #172154;
 }
 .water img {
     max-height: 50%;
@@ -192,4 +230,37 @@ cursor: pointer;
 }
 /* Water text size is in the HTML code */
 
+.why_us {
+ margin: 2rem;
+ color: #172154;
+}
 
+.pure {
+    display: flex;
+          align-items: flex-start;
+          box-sizing: border-box;
+}
+.paired {
+    display: flex;
+          align-items: center;
+
+          box-sizing: border-box;
+}
+
+.brew {
+    display: flex;
+          align-items: center;
+          box-sizing: border-box;
+}
+
+.health {
+    display: flex;
+          align-items: center;
+          box-sizing: border-box;
+}
+
+.links {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
