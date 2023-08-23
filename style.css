@@ -144,7 +144,7 @@ h1 {
     box-sizing: border-box;
 }
 .select {
-background: #6773B7;
+background: #172154;
 color: white;
 display: flex;
 justify-content: space-between;
@@ -161,7 +161,7 @@ transition: background 0.3s;
     box-shadow: 0 0 0.8em #26489a;
 }
 .select:hover {
-    background: #323741;
+    background: #6773B7;
 }
 .caret {
     width: 0;
@@ -177,9 +177,8 @@ transition: background 0.3s;
 .menu {
     list-style: none;
     padding: 0.2em 0.5em;
-    background: #323741;
+    background: #172154;
     border: 1px #363a43 solid;
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2)
     border-radius: 0.5em;
     color: #9fa5b5;
     position: absolute;
@@ -200,16 +199,28 @@ cursor: pointer;
 }
 
 .menu li:hover {
-    background: #2a2d35;
+    background: #6773B7;
 }
 
 .active {
-    background: #23242a;
+    background: #6773B7;
 }
 
 .menu-open {
     display: block;
     opacity: 1;
+}
+
+.buy {
+    padding: 1em 2em;
+    border: 1px #363a43 solid;
+    border-radius: 0.5em;
+    background: #172154;
+    color: white;
+}
+
+.buy:hover{
+    background: #6773B7;
 }
 
 .singapure_containers {
