@@ -2,6 +2,7 @@ html {
 scroll-behavior: smooth;
 }
 body {
+/* Outfit is primary font and Verdana is backup font */
  font-family: 'Outfit', verdana;
  background-color: beige;
  margin: 0px;
@@ -10,6 +11,7 @@ body {
   z-index: 2;
   font-size: 15px;
   overflow: hidden;
+  /* Dark blue */
   background-color: #172154;
 }
 .topnav ul {
@@ -20,6 +22,7 @@ margin: 0;
    display: inline;
 }
 .topnav a{
+/* Off white */
    color: #F1FAFE;
 }
 .topnav li a{
@@ -29,12 +32,13 @@ margin: 0;
   margin: 0;
   text-decoration: none;
   font-weight: bold;
-
 }
 .topnav li a:hover {
+/* Light purple */
     background: #6773B7;
 }
 img {
+/* Images that don't have different formatting are restricted to prevent strange sizing with flexbox */
     max-width: 100%;
     min-width: 20%;
 }
@@ -47,6 +51,7 @@ video {
       z-index: -1;
 }
 .main_video {
+/* Includes flexbox formatting for logo and text over video elements*/
     position: relative;
     margin: 0;
     width: 100vw;
@@ -66,6 +71,7 @@ video {
     z-index = 1;
     top: 3em;
     bottom: 1em;
+    /* Secondary font: Baskerville. */
     font-family:'Baskerville';
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
@@ -73,7 +79,7 @@ video {
       -o-animation: fadeIn 5s;
       -ms-animation: fadeIn 5s;
 }
-
+/* Cross-browser compatibility */
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -115,16 +121,14 @@ z-index: 1;
 .parallax_future {
 /* The image used */
   background-image: url("Images/pexels-oliver-sjöström-931018.jpg");
-
-  /* Set a specific height */
   min-height: 500px;
-
-  /* Create the parallax scrolling effect */
+  /* Parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* Parallax turned off on mobile */
 @media only screen and (max-device-width: 1366px) {
   .parallax_future {
     background-attachment: scroll;
@@ -147,12 +151,10 @@ h1 {
     font-size: 4em;
     color: #172154;
 }
-
 .order_text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-     justify-content: space-evenly;
+    justify-content: center;
 }
 .dropdown {
     min-width: 15em;
@@ -232,11 +234,13 @@ cursor: pointer;
 }
 
 .buy {
+    margin: auto;
     padding: 1em 2em;
     border: 1px #363a43 solid;
     border-radius: 0.5em;
     background: #172154;
     color: white;
+    max-width: 150px;
 }
 
 .buy:hover{
@@ -321,7 +325,6 @@ cursor: pointer;
 
 .brew {
  margin: 5em;
-
 }
 .parallax_brew {
 /* The image used */
@@ -362,7 +365,6 @@ cursor: pointer;
     background-attachment: scroll;
   }
 }
-
 .links {
     display:flex;
     align-items: center;

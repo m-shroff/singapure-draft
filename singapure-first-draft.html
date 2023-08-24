@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<!-- Navigation bar -->
 <div id="topnav" class="topnav">
     <ul>
         <li> <a href="#home"><em>HOME</em></a> </li>
@@ -20,25 +20,28 @@
     </ul>
 
 </div>
-
+<!-- Video, logo and text overlaying video section is 'home'-->
 <div id="home" class="main_video">
     <video src="Videos/pexels-rostislav-uzunov-7385122.mp4" playsinline muted loop autoplay> </video>
     <div class="over_video">
-    <p> water worthy of you. </p>
+    <p> water worthy <em>of you.</em></p>
 </div>
     <div class="logo">
         <a href="#topnav"> <img src="Images/color_logo_no_bckground.png"> </a>
     </div>
 </div>
+<!-- Section dividing video and ordering -->
 <div class="future">
     <h1>Taste the future of water</h1>
     <p>Sustainably sourced from deep in the
     Bali earth, ultra purified using Singapore-designed technology without any chemicals. </p>
 </div>
 <div class="parallax_future"></div>
+<!-- Buffer is used to provide extra space to 'Shop' link in navbar along with extra design space -->
 <div id="buffer" class="buffer"></div>
+<!-- Dropdowns -->
 <div id="product_container" class="product_container">
-        <div id="ordertext">
+        <div class="order_text">
             <h1><em>ORDER NOW</em></h1>
             <div class="dropdown">
                 <div class="select">
@@ -65,11 +68,12 @@
                     <li class="active">30 days</li>
                 </ul>
             </div>
-            <button class="buy" id="buy"> <!-- <href="https://wa.me/628113801616?text=[message-url-encoded]">-->BUY NOW</button>
+            <br>
+            <button class="buy" id="buy">BUY NOW</button>
         </div>
-
    <div class="singapure_containers"><img src="Images/pink sunset bottle.png" alt="singapure containers"></div>
 </div>
+<!-- Our Water text. Contains styling -->
 <div id="water" class="water">
     <img src="Images/singapure_bottling.jpg">
     <div class="water_text">
@@ -79,7 +83,7 @@
         </p>
     </div>
 </div>
-<br>
+<!-- Why Singapure section with multiple parallax images -->
 <div id="why_us" class="why_us">
     <h1> Why Singapure? </h1>
     <div class="pure">
@@ -99,6 +103,7 @@
     <p> <b> Healthful and healing. </b> Our water has a balanced pH level of 7.2 and can be easily digested by everyone. </p> </div>
     <div class="parallax_health"></div>
 </div>
+<!-- Links section. Terms & Conditions and Privacy Policy should be added, along with any new social medias -->
 <div class="links">
 <ul>
     <li><a href="#home">Home</a></li>
@@ -118,18 +123,19 @@
     <li><a href="https://wa.me/628113801616">WhatsApp</a></li>
 </ul>
 
+<!-- Terms and Conditions and Privacy Policy need to be written for this website
 <ul>
     <li>Terms & Conditions</li>
     <li>Privacy Policy</li>
-</ul>
+</ul> -->
 </div>
-
-
+<!-- Javascript for Dropdowns -->
 <script>
+//selections is a global variable holding final dropdown selections
     let selections = [];
     let message = 'Hello Singapure! I would like to order';
     const dropdowns = document.querySelectorAll('.dropdown');
-
+//the structure of the dropdowns means additional dropdowns can be added
     dropdowns.forEach(dropdown => {
         const select = dropdown.querySelector('.select');
         const caret = dropdown.querySelector('.caret');
@@ -175,8 +181,6 @@ document.getElementById('buy').addEventListener('click', () => {
             message +=".";
             window.open(href="https://wa.me/628113801616?text="+message, "_blank");
     });
-
-
 
 </script>
 
