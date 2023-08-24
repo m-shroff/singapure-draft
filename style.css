@@ -132,7 +132,7 @@ z-index: 1;
 }
 .buffer {
 width: 100%;
-min-height: 30vh;
+min-height: 6em;
 background-color: var(--color);
 }
 .product_container {
@@ -249,15 +249,16 @@ cursor: pointer;
 }
 
 .water {
-      margin: 2rem 5rem 2rem 2rem;
+      margin: 2rem 4rem;
       display: flex;
-      align-items: flex-start;
-      box-sizing: border-box;
+      align-items: center;
       color: #172154;
 }
 .water img {
-    max-height: 40%;
-    max-width: 40%;
+    min-height: 35%;
+    max-height: 80%;
+    min-width: 35%;
+    max-width: 80%;
     margin: 3rem;
 
 }

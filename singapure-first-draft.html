@@ -13,11 +13,10 @@
 <div id="topnav" class="topnav">
     <ul>
         <li> <a href="#home"><em>HOME</em></a> </li>
-        <li> <a href="#product_container"><em>SHOP</em></a> </li>
+        <li> <a href="#buffer"><em>SHOP</em></a> </li>
         <li>  <a href="#water"><em>OUR WATER</em></a> </li>
         <li>  <a href="#why_us"><em>WHY SINGAPURE?</em></a> </li>
-        <li> <a href="#sustainability"><em>SUSTAINABILITY</em></a> </li>
-        <li>  <a style="float:right;" href="#contact"><em>CONTACT US</em></a>  </li>
+        <li>  <a style="float:right;" href="https://wa.me/628113801616"><em>CONTACT US</em></a>  </li>
     </ul>
 
 </div>
@@ -32,12 +31,12 @@
     </div>
 </div>
 <div class="future">
-    <h1><em>Taste the future of water</em></h1>
+    <h1>Taste the future of water</h1>
     <p>Sustainably sourced from deep in the
     Bali earth, ultra purified using Singapore-designed technology without any chemicals. </p>
 </div>
 <div class="parallax_future"></div>
-<div class="buffer"></div>
+<div id="buffer" class="buffer"></div>
 <div id="product_container" class="product_container">
         <div id="ordertext">
             <h1><em>ORDER NOW</em></h1>
@@ -66,13 +65,13 @@
                     <li class="active">30 days</li>
                 </ul>
             </div>
-            <button class="buy" id="buy">BUY NOW</button>
+            <button class="buy" id="buy"> <!-- <href="https://wa.me/628113801616?text=[message-url-encoded]">-->BUY NOW</button>
         </div>
 
    <div class="singapure_containers"><img src="Images/pink sunset bottle.png" alt="singapure containers"></div>
 </div>
 <div id="water" class="water">
-    <img src="Images/pexels-oliver-sjöström-931018.jpg">
+    <img src="Images/singapure_bottling.jpg">
     <div class="water_text">
     <h1> Our Water </h1>
        <p style="font-size: 1.5em"> Hydrate happier. Water worthy of you. </p>
@@ -102,22 +101,21 @@
 </div>
 <div class="links">
 <ul>
-    <li>Home</li>
-    <li>Shop</li>
-    <li>Our Water</li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#buffer">Shop</a></li>
+    <li><a href="#water">Our Water</a></li>
 </ul>
     <ul>
-        <li>Why Singapure?</li>
-        <li>Sustainability</li>
-        <li>Contact Us</li>
+        <li><a href="#why_us">Why Singapure?</a></li>
+        <li><a href="https://wa.me/628113801616">Contact Us</a></li>
     </ul>
 
 
 <ul>
     Find us on:
-    <li>Instagram</li>
-    <li>Facebook</li>
-    <li>WhatsApp</li>
+    <li><a href="https://www.instagram.com/singapurewater/">Instagram</a></li>
+    <li><a href="https://www.facebook.com/SingapurePH>">Facebook</a></li>
+    <li><a href="https://wa.me/628113801616">WhatsApp</a></li>
 </ul>
 
 <ul>
@@ -126,9 +124,10 @@
 </ul>
 </div>
 
-Water worthy of you.
 
 <script>
+    let selections = [];
+    let message = 'Hello Singapure! I would like to order';
     const dropdowns = document.querySelectorAll('.dropdown');
 
     dropdowns.forEach(dropdown => {
@@ -148,7 +147,6 @@ Water worthy of you.
             option.addEventListener('click', () => {
             //Since I believe the below text gives you the option, getting the 'selected.innerText' should be what I need to add more functionality
             selected.innerText = option.innerText;
-
             select.classList.remove('select-clicked');
             caret.classList.remove('caret-rotate');
             menu.classList.remove('menu-open');
@@ -158,18 +156,25 @@ Water worthy of you.
             option.classList.add('active');
          });
         });
-        document.getElementById('buy').addEventListener('click', () => {
-        alert(selected.innerText);
-    });
 
     });
+document.getElementById('buy').addEventListener('click', () => {
 
+        dropdowns.forEach(dropdown => {
+             selections.push(dropdown.querySelector('.selected').innerText.toLowerCase());
+             });
+            var freq = selections.pop();
+            var quan = selections.pop();
 
-
-
-
-
-
+            if (freq == 'once') {
+            message += ' ' + quan + ' of water ' + freq;
+            }
+            else {
+            message += ' ' + quan + ' of water every ' + freq;
+            }
+            message +=".";
+            window.open(href="https://wa.me/628113801616?text="+message, "_blank");
+    });
 
 
 
