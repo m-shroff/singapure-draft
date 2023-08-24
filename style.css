@@ -45,8 +45,6 @@ video {
     position: absolute;
       margin: 0;
       z-index: -1;
-
-
 }
 .main_video {
     position: relative;
@@ -106,14 +104,36 @@ z-index = 1;
 position: absolute;
 top: 1em;
 width: 20%;
-z-index: 0;
-
+z-index: 1;
 }
 .future {
     margin: 0 5rem 5rem 5rem;
     position: relative;
     align-text: center;
     font-size: 1em;
+}
+.parallax_future {
+/* The image used */
+  background-image: url("Images/pexels-oliver-sjöström-931018.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax_future {
+    background-attachment: scroll;
+  }
+}
+.buffer {
+width: 100%;
+min-height: 30vh;
+background-color: var(--color);
 }
 .product_container {
 /* Product container is referring to the flex container that has the product ordering and image */
@@ -251,30 +271,95 @@ cursor: pointer;
         width: 100vw;
         height: 50vh;
         object-fit: cover;
-        z-index: -1;
+        z-index: 2;
+}
+
+.parallax_pure{
+  /* The image used */
+  background-image: url("Images/pexels-matt-hardy-1533720.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax_pure {
+    background-attachment: scroll;
+  }
 }
 
 .pure {
-    display: flex;
-          align-items: flex-start;
-          box-sizing: border-box;
+  margin: 5em;
+}
+.parallax_paired{
+  /* The image used */
+  background-image: url("Images/pexels-athena-2961968.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax_paired {
+    background-attachment: scroll;
+  }
 }
 .paired {
-    display: flex;
-          align-items: center;
-          box-sizing: border-box;
+     margin: 5em;
 }
 
 .brew {
-    display: flex;
-          align-items: center;
-          box-sizing: border-box;
-}
+ margin: 5em;
 
+}
+.parallax_brew {
+/* The image used */
+  background-image: url("Images/pexels-bibhash-banerjee-1047254.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax_brew {
+    background-attachment: scroll;
+  }
+}
 .health {
-    display: flex;
-          align-items: center;
-          box-sizing: border-box;
+     margin: 5em;
+}
+.parallax_health {
+/* The image used */
+  background-image: url("Images/pexels-jeff-guab-2407636.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax_health {
+    background-attachment: scroll;
+  }
 }
 
 .links {
